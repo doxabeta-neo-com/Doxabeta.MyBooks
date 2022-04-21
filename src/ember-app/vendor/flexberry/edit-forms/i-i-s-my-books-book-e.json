@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Author",
+      "projection": "AuthorL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Book",
+  "name": "IISMy_BooksBookE",
+  "className": "BookE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-my-books-book",
+      "modelProjection": "BookE"
+    }
+  ]
+}

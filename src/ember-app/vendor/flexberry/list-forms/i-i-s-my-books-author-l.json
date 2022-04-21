@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-my-books-author-e",
+  "editForm": "i-i-s-my-books-author-e",
+  "external": false,
+  "caption": "Author",
+  "name": "IISMy_BooksAuthorL",
+  "className": "AuthorL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-my-books-author",
+      "modelProjection": "AuthorL"
+    }
+  ]
+}

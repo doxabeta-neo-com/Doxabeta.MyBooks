@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Author",
+  "name": "IISMy_BooksAuthorE",
+  "className": "AuthorE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-my-books-author",
+      "modelProjection": "AuthorE"
+    }
+  ]
+}

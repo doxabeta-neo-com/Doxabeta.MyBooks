@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "My_ books",
+  "applicationTitle": "My_ books",
+  "items": [
+    {
+      "link": null,
+      "menuName": "my-books",
+      "caption": "My books",
+      "title": "My books",
+      "children": [
+        {
+          "link": "i-i-s-my-books-author-l",
+          "menuName": null,
+          "caption": "Authors",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-my-books-book-l",
+          "menuName": null,
+          "caption": "Books",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

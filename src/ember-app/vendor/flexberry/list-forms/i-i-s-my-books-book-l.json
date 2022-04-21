@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-my-books-book-e",
+  "editForm": "i-i-s-my-books-book-e",
+  "external": false,
+  "caption": "Book",
+  "name": "IISMy_BooksBookL",
+  "className": "BookL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-my-books-book",
+      "modelProjection": "BookL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISMy_BooksBook",
+  "modelName": "i-i-s-my-books-book",
+  "className": "Book",
+  "nameSpace": "IIS.My_Books",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "author",
+      "relatedTo": "i-i-s-my-books-author",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "tag",
+      "relatedTo": "i-i-s-my-books-tag",
+      "inverse": "book"
+    }
+  ],
+  "projections": [
+    {
+      "name": "BookE",
+      "modelName": "i-i-s-my-books-book",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Author",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Author",
+          "name": "author",
+          "relatedTo": "i-i-s-my-books-author",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "TagE",
+          "caption": "Tag",
+          "name": "tag",
+          "relatedTo": "i-i-s-my-books-tag",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "BookL",
+      "modelName": "i-i-s-my-books-book",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Author",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "author",
+          "relatedTo": "i-i-s-my-books-author",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

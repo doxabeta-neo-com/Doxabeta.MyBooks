@@ -1,0 +1,48 @@
+﻿{
+  "name": "IISMy_BooksTag",
+  "modelName": "i-i-s-my-books-tag",
+  "className": "Tag",
+  "nameSpace": "IIS.My_Books",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "book",
+      "relatedTo": "i-i-s-my-books-book",
+      "inverse": "tag"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "TagE",
+      "modelName": "i-i-s-my-books-tag",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
